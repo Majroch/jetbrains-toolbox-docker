@@ -1,0 +1,15 @@
+---
+services:
+  toolbox:
+    build: .
+    environment:
+      DISPLAY: '${DISPLAY}'
+      XAUTHORITY: '${XAUTHORITY}'
+    volumes:
+      - '/tmp/.X11-unix:/tmp/.X11-unix'
+      - '${XAUTHORITY}:${XAUTHORITY}:ro'
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - '/dev/fuse:/dev/fuse'
+
