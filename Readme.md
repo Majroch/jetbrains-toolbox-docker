@@ -11,7 +11,7 @@ To get started, you'll need to have:
 
 - Docker ([Official docker site](https://docs.docker.com/engine/install/))
 - Docker compose ([Official docker site](https://docs.docker.com/compose/install/))
-- Fuse (propably package named `fuse` or `libfuse`)
+- Fuse (probably package named `fuse` or `libfuse`)
 - Git
 
 To use this project, run:
@@ -22,5 +22,5 @@ cd jetbrains-toolbox-docker
 docker compose up -d
 ```
 
-After that, Toolbox welcome window should pop-up on screen.
+After that, Toolbox welcome window should pop up on screen.
 
