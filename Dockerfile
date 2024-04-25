@@ -30,6 +30,8 @@ RUN apt-get install -y \
       libgtk-3-bin \
       tar \
       dbus-user-session \
+      gpg \
+      xdg-utils \
     && rm -rf /var/lib/apt/lists/* \
     && apt clean
 

@@ -3,7 +3,7 @@
 /usr/local/bin/jetbrains-toolbox
 
 while true; do
-    currentProcesses="$(ps -aux | grep -i jetbrains-toolbox)"
+    currentProcesses="$(pgrep -af jetbrains-toolbox)"
 
     if [ "${currentProcesses}" = "" ]; then
         exit 0
